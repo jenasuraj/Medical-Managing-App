@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Home Page Layout */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #f5f9ff;
+}
+
+/* Left Side Styling */
+.left-content {
+  flex: 1;
+  text-align: left;
+}
+
+.left-content h1 {
+  font-size: 5.5em;
+  color: #023e8a;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* Right Side Styling */
+.right-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+/* General Button Styles */
+button, .patient-apply-btn, .appointment-btn, .stats-btn, .payment-button {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #00b4d8;
+}
+
+button:hover, .patient-apply-btn:hover, .appointment-btn:hover, .stats-btn:hover, .payment-button:hover {
+  background-color: #0096c7;
+}
+
+button:active, .patient-apply-btn:active, .appointment-btn:active, .stats-btn:active, .payment-button:active {
+  background-color: #0077b6;
+}
+
+/* Specific Button Colors */
+.stats-btn {
+  background-color: green;
+}
+
+.stats-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Patient Registration Form Styles */
+.patient-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.patient-form h2, .container2 h1, .payment-title {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.patient-form label, .detail-container p {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.patient-form input, .patient-form select, .input-section input, .payment-input, .container2 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Container Styles */
+.container, .container2 {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Centered Container */
+.container2 {
+  max-width: 800px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Patient Portfolio Styles */
+.all-patients-profile, .detail-container, .doctor-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.box-item {
+  background-color: #f1f1f1;
+  border: 2px solid #007bff;
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.box-item:hover {
+  background-color: #d1d1d1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.patient-detail, .appointment-data {
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-detail h2, .appointment-data h3 {
+  color: #333;
+}
+
+/* Doctor List Styles */
+.doctor-list {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.doctor-list h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.doctor-list li {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.doctor-list li p {
+  color: #555;
+}
+
+/* Payment Styles */
+.payment-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-info {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.payment-input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.payment-input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
